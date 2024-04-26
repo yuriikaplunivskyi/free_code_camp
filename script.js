@@ -14,7 +14,7 @@ const decimalToBinary = (input) => {
 
   while (input > 0) {
     const quotient = Math.floor(input / 2);
-    const remainder = input % 2;
+    const remainder = input % 2;/* Отримуємо залишок з якого формуємо бінарне число в масиві */
 
     inputs.push(input);
     quotients.push(quotient);
@@ -26,7 +26,7 @@ const decimalToBinary = (input) => {
   console.log("Quotients: ", quotients);
   console.log("Remainders: ", remainders);
 
-  result.innerText = remainders.reverse().join("");
+  result.innerText = remainders.reverse().join("");/* розверстаємо масив і зєднуємо в рядок отримуючи наше бінарне число */
 };
 
 const checkUserInput = () => {
