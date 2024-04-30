@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --white: #dcecf3;
+  --light-grey: #80c1e0;
+  --dark-blue: #1b1b32;
+  --light-pink: #e080d9;
+}
+
+body {
+  background: linear-gradient(to right,#7700ff, #2200ff);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+  color: var(--white);
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.input-container {
+  margin: 10px 0;
+  display: flex;
+  font-size: 24px;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.convert-btn {
+  background-color: var(--light-pink);
+  cursor: pointer;
+  border: none;
+  padding: 10px 5px;
+  color: var(--white);
+  font-weight: bold;
+  transition: all .3s ease; 
+  border-radius: 5px;
+}
+
+.number {
+  height: 35px;
+  font-size: 20px;
+  padding: 5px 5px;
+}
+
+#output {
+  border-radius: 10px;
+  margin: 10px 0;
+  min-width: 250px;
+  width: fit-content;
+  min-height: 80px;
+  word-break: break-word;
+  padding: 15px;
+  border: 5px solid var(--light-pink);
+  border-image-slice: 1;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 500px) {
+  .input-container {
+    flex-direction: row;
+  }
+
+  #output {
+    max-width: 460px;
+  }
+}
